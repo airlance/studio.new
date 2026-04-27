@@ -116,12 +116,3 @@ export function StoreClientProvider({
         </StoreClientContext.Provider>
     );
 }
-
-// Custom hook to access context
-export function useStoreClient() {
-    const context = React.useContext(StoreClientContext);
-    if (!context) {
-        throw new Error('useStoreGood must be used within a StoreClientProvider');
-    }
-    return context;
-}

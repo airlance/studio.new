@@ -2,11 +2,9 @@ import { AuthRouting } from '@/auth/auth-routing';
 import { RequireAuth } from '@/auth/require-auth';
 import { ErrorRouting } from '@/errors/error-routing';
 import { MainLayout } from '@/layouts/main/layout';
-import {
-    AuthAccountDeactivatedPage,
-    AuthWelcomeMessagePage,
-    AuthGetStartedPage
-} from '@/pages/auth';
+import { AuthAccountDeactivatedPage } from "@/pages/auth/auth-account-deactivated-page";
+import { AuthWelcomeMessagePage } from "@/pages/auth/auth-welcome-message-page";
+import { AuthGetStartedPage } from "@/pages/auth/auth-get-started-page";
 import { Navigate, Route, Routes } from 'react-router';
 
 export function AppRoutingSetup() {
